@@ -16,3 +16,12 @@ class Jogador(ABC): #Herança
     @abstractmethod # Obriga as classes filhas a implementarem
     def atacar(self):
         print(f"{self.nome} atacou!")
+    
+    @abstractmethod # Obriga as classes filhas a implementarem
+    def defender(self):
+        print(f"{self.nome} defendeu!")
+
+if __name__ == '__main__':
+    p1 = Jogador("Jow", 50)
+    p1.atacar()
+    print(p1.saude)
